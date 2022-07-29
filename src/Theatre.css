@@ -1,0 +1,26 @@
+.check_box1 {
+    /* margin-left: 23px; */
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+
+  }
+  .check_box1 + label{
+    /* background-color: black; */
+    background:url("D:\React\goldbox\public\seat1.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    /* margin-bottom: 100px; */
+     display: inline-block;
+    /* right: 10px; */
+    position: absolute;
+      padding: 0 0 0 0px;
+  }
+  .check_box1:checked + label{
+    /* background-color: pink; */
+    background:url("D:\React\goldbox\public\selected.png") no-repeat;
+    height: 30px;
+    width: 30px;
+     display:inline-block;
+    padding: 0 0 0 0px;
+}

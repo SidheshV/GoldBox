@@ -1,0 +1,95 @@
+.bImg{
+   background-image:url("D:\React\goldbox\public\grayb.jpg");
+   height: 100%;
+   background-position: center;
+   background-size:cover; 
+   display: flex;
+   justify-content: center;
+}
+
+ iframe{
+  margin-left: 57px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  }
+  
+  .box2{
+    width: 1000px;
+    height: auto;
+    border:1px solid #000;
+    /* margin-left: 105px; */
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+ .lh{
+    margin-left: 50px;
+    margin-top: 40px;
+ }
+ .flexmv{
+    display: flex;
+ }
+
+ .lh1{
+    margin-left: 100px;
+ }
+ .lh1 h1{
+   margin-top: 30px;
+   font-style: italic;
+   color: gold;
+ }
+  
+ .lh1 h4{
+   font-size: 16px;
+   margin-top: 40px;
+   color: white;
+   max-width:400px;
+   word-wrap:break-word;
+ }
+  
+  
+  
+  
+  button {
+  /* padding: 20px 35px; */
+  padding: 20px 35px;
+  font-size: 19px;
+  margin-left: 800px;
+  margin-bottom: 50px;
+  background-color: gold;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.0s ease 0s;
+  }
+  
+  button:hover{
+    opacity: 0.9;
+  }
+
+
+#starRating2{
+   color: gold;
+   float: right;
+}
+#ageRate2{
+   color:gold;
+}
+
+.btnbook{
+   margin-top: 120px;
+}
+
+.genretag{
+   margin-left: 50px;
+   font-size: 20px;
+   color: gold;
+   margin-top: 100px;
+}
+
+.actortag{
+   margin-left: 50px;
+   font-size: 20px;
+   color: gold;
+   margin-top: 10px;
+}
