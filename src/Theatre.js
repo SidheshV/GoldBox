@@ -18,7 +18,7 @@ function TheatreAndSeats(){
       var tid = url.substring(url.lastIndexOf("/")-1);
       var timeId = url.substring(url.lastIndexOf("/")-3);
       var timeid = parseInt(timeId);
-      var cinemaName = url.substring(url.lastIndexOf("/")-4 ,29);
+      var cinemaName = url.substring(url.lastIndexOf("/")-4 ,57);
       var cardData = detailInfo;
       var item = cardData.find(items=>items.id===parseInt(tid));
       
