@@ -13,6 +13,7 @@ import AllMovies from './Movies';
 import {BrowserRouter,NavLink,Routes,Route} from 'react-router-dom';
 import MovDetails from './MovieDetails';
 import TheatreAndSeats from './Theatre';
+import CinemaSelect from './Cinema';
 class App extends React.Component{
   render()
   {
@@ -29,7 +30,9 @@ class App extends React.Component{
             <Route path='Login' element={<AuthUser/>}></Route>
             <Route path='Register' element={<RegisUser/>}></Route>
             <Route path='/Movies/:id' element={<MovDetails/>}></Route>
-            <Route path='/Movies/:id/seats' element={<TheatreAndSeats/>}></Route>
+            <Route path='/Movies/:id/cinema' element={<CinemaSelect/>}></Route>
+            <Route path='/Movies/:id/:cinema/:val/seats' element={<TheatreAndSeats/>}></Route>
+
             {/* <Route path="/cars/:id" component={InfoCard} exact></Route> */}
           </Routes>
         </BrowserRouter>

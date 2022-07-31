@@ -1,6 +1,5 @@
 export const seat = [
     { 
-    
       name: "A1",
       price: 100
     },
@@ -13,6 +12,14 @@ export const seat = [
       price: 100
     },
     {
+      name: "A4",
+      price: 100
+    },
+    {
+      name: "A5",
+      price: 100
+    },
+    {
       name: "B1",
       price: 200
     },
@@ -22,6 +29,14 @@ export const seat = [
     },
     {
       name: "B3",
+      price: 200
+    },
+    {
+      name: "B4",
+      price: 200
+    },
+    {
+      name: "B5",
       price: 200
     },
     
@@ -37,6 +52,15 @@ export const seat = [
         name: "C3",
         price: 300
     },
+    {
+      name: "C4",
+      price: 300
+  },
+  {
+      name: "C5",
+      price: 300
+  },
+  
    
   ];
   

@@ -11,7 +11,11 @@ import { useState,useRef } from 'react';
 function ContactInfo(){
     return(
         <>
-            <h2 class='cont'>Our helpline number is : 1231-213-23123</h2>
+            <div id='imgbk'>
+                
+
+            </div>
+            
         </>
     );
 }

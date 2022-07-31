@@ -28,6 +28,7 @@ function CommonNavBar(){
                         </DropdownButton> */}
                         </Nav>
                         <Nav>
+                        
                             <Nav.Link href="/Login"><span className='rightnav'>Login</span></Nav.Link>
                             <Nav.Link eventKey={2} href="/Register"><span className='rightnav'>Register</span></Nav.Link>
                         </Nav>

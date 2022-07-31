@@ -1,3 +1,59 @@
-label{
-    color:gold;
+/* body{
+  height: 900px;
+} */
+
+#rbox{
+  position:relative;
+  top: 55%;
+  left: 50%;
+  width:450px;
+  height:700px;
+  margin-top: 20px;
+  margin-left: -12em;  
+  border-radius: 5px;
+  color: gold;
+  background-color: rgba(19, 19, 19, 0.895);
+  border-radius: 20px;
+}
+
+#rbtsub{
+margin-top: 15px;
+margin-right: 20px;
+float: right;
+color: gold;
+background-color: black;
+border-radius: 4px;
+border: none;
+}
+
+#rupass{
+margin-top: 10px;
+margin-left: 11px;
+width: 360px;
+}
+#rcpass{
+  margin-top: 10px;
+  margin-left: 11px;
+  width: 360px;
+  }
+#runame{
+margin-top: 10px;
+margin-left: 11px;
+width: 360px;
+}
+
+#ruemail{
+margin-top: 10px;
+margin-left: 11px;
+width: 360px;
+}
+#ruphone{
+margin-top: 10px;
+margin-left: 11px;
+width: 360px;
+}
+
+#rl1{
+margin-left: 20px;
+width: 360px; 
 }

@@ -18,23 +18,24 @@ function RegisUser(){
     }
     return(
       <>
-        <div id="box">
+        <div id="rbox">
             <br/>
-            <h2 id="l1">Register Form</h2>
+            <h2 id="rl1">Register Form</h2>
             <br/>
             <form onSubmit={handleRegis}>
-              <label name="uname" ><strong>&nbsp;User Name</strong></label><br />
-              <input type="text" id="uname" name="uname" onChange={(e)=>setUserName(e.target.value)}></input> <br/> <br/>
-              <label name="uemail"><strong>&nbsp;Email</strong></label><br />
-              <input type="email" id="uemail" name="uemail"></input> <br/> <br/>
-              <label name="uphone"><strong>&nbsp;Phone number</strong></label><br />
-              <input type="tel" id="uphone" name="uphone" placeholder='Enter a 10 digit Number' required></input><br/> <br/>
-              <label name="upass" ><strong>&nbsp;Password</strong></label><br />
-              <input type="password" id="upass" name="upass" onChange={(e)=>setUserPass(e.target.value)}></input> 
-              <label name="cpass" ><strong>&nbsp; Confirm Password</strong></label><br />
-              <input type="password" id="cpass" name="cpass" onChange={(e)=>setCPass(e.target.value)}></input> 
-              <Button type='submit' id="btsub">Register</Button>
+            &nbsp;&nbsp;<label name="runame" ><strong>&nbsp;User Name</strong></label><br />
+              <input type="text" id="runame" name="runame" onChange={(e)=>setUserName(e.target.value)}></input> <br/> <br/>
+              &nbsp;&nbsp;<label name="ruemail"><strong>&nbsp;Email</strong></label><br />
+              <input type="email" id="ruemail" name="ruemail"></input> <br/> <br/>
+              &nbsp;&nbsp;<label name="ruphone"><strong>&nbsp;Phone number</strong></label><br />
+              <input type="tel" id="ruphone" name="ruphone" placeholder='Enter a 10 digit Number' required></input><br/> <br/>
+              &nbsp;&nbsp;<label name="rupass" ><strong>&nbsp;Password</strong></label><br />
+              <input type="password" id="rupass" name="rupass" onChange={(e)=>setUserPass(e.target.value)}></input> <br /><br />
+              &nbsp;&nbsp;<label name="rcpass" ><strong>&nbsp; Confirm Password</strong></label><br />
+              <input type="password" id="rcpass" name="rcpass" onChange={(e)=>setCPass(e.target.value)}></input> 
+              <Button type='submit' id="rbtsub">Register</Button>
             </form>
+            &nbsp;&nbsp;<NavLink to='/Login' class='nvreg'>Already Have an Account? Click here</NavLink>
           </div>
       </>
     );

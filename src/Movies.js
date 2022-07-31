@@ -19,6 +19,18 @@ import Col from 'react-bootstrap/Col';
 function AllMovies()
 {
     const navigate  = useNavigate();
+    const [query,setQuery] = useState("");
+    console.log(query);
+    
+    const found = movieData.filter(obj => {
+        if(obj.title.toLowerCase().includes(query)){
+            return obj;
+        }
+          
+    });
+    console.log(found);
+
+
     const [index,setIndex] = useState(0);
     const handleIndex = (selectedIndex,a) =>{
         setIndex(selectedIndex);
@@ -65,7 +77,8 @@ function AllMovies()
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                         <Form className="d-flex">
-                            <Form.Control type="search" placeholder="Enter the Movie Here" className="me-1" style={{width:'500px', height:'35px', background:'white',color:'gold',border:'1px solid gold',opacity: '0.7'}}/>
+                            <Form.Control type="search" placeholder="Enter the Movie Here" className="me-1" onChange={e=>setQuery(e.target.value.toLowerCase())}
+                             style={{width:'500px', height:'35px', background:'white',color:'black',border:'1px solid gold',opacity: '0.7'}}/>
                             {/* <Button variant="outline-light" style={{border:'none'}}>Search</Button> */}
                         </Form>
                         </Navbar.Collapse>
@@ -75,7 +88,7 @@ function AllMovies()
                 <br/>
             
                 <Row lg={4}>
-                    {movieData.map((product) => {  
+                    {found.map((product) => {  
                         const { id, title, content, image, rating, age } =
                             product;
                         return (

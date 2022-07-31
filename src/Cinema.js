@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './MovieDetails.css';
+import './Cinema.css';
 import { useNavigate } from 'react-router-dom';
 import { movieData } from './MovieData';
 import { Accordion,Button, Breadcrumb, BreadcrumbItem, ButtonGroup ,ButtonToolbar,
@@ -11,14 +11,25 @@ import { useState,useRef } from 'react';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { detailInfo } from './DataInfo';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-
-function MovDetails(){
+function CinemaSelect(){
     const navigate  = useNavigate();
     const url = window.location.href;
-    var tid = url.substring(url.lastIndexOf("/")+1);
+    var tid = url.substring(url.lastIndexOf("/")-1);
     var cardData = detailInfo;
     var item = cardData.find(items=>items.id===parseInt(tid));
+    const getInitialState = () => {
+        const value = "PVR";
+        return value;
+      };
+    const [value, setValue] = useState(getInitialState);
+    
+    const handleChange = (e) => {
+        setValue(e.target.value);
+    };
+
     return(
         <>
         <div class="bImg">
@@ -31,16 +42,30 @@ function MovDetails(){
                     <div class="lh"><img src={process.env.PUBLIC_URL + `${item.image}`} alt="" width="300px" height="350px"></img></div>
                         <div class="lh1"> 
                         <h1>{item.title}</h1>
-                        <h4>{item.summary}</h4>
                         <br/>
                         <br/>
-                        <span id='ageRate2'>Age :{item.age}+</span>
-                        <span id='starRating2'>{item.rating} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
+                        <h2 class='th1'>Select Your Nearest Theatre</h2>
+                        <br/>
+                        <select class='sl1' value={value} onChange={handleChange}>
+                            <option value="PVR">PVR</option>
+                            <option value="Cinepolis">Cinepolis</option>
+                            <option value="IMAX">IMAX</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        {/* <span id='ageRate2'>Age :{item.age}+</span>
+                        <span id='starRating2'>{item.rating} <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span> */}
                     </div>
                 </div>
-                <div class="genretag">Genres : <span style={{fontSize:'16px'}}>{item.genre}</span></div>
-                <div class="actortag">Actors/Actress : <span style={{fontSize:'16px' }}>{item.actors}</span></div>
-                <button class="btnbook" onClick={() => navigate(`/Movies/${item.id}/cinema`)}>Book Now !</button>
+                <div class='btnfelx'>
+                    <Button class="btntime3" onClick={() => navigate(`/Movies/${value}/3/${item.id}/seats`)}>3:00PM</Button> &nbsp; &nbsp; 
+                    &nbsp; &nbsp; &nbsp; &nbsp;<Button class="btntime6" onClick={() => navigate(`/Movies/${value}/6/${item.id}/seats`)}>6:00PM</Button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <Button class="btntime9" onClick={() => navigate(`/Movies/${value}/9/${item.id}/seats`)}>9:00PM</Button>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </div>
+                
+
+                
+                {/* <button class="btnbook" onClick={() => navigate(`/Movies/${item.id}/${value}/seats`)}>Book Now !</button> */}
                 {/* <a href=""><button type="submit" name="bookticket">Book now</button></a> */}
             </div>
 
@@ -52,4 +77,4 @@ function MovDetails(){
     );
 }
 
-export default MovDetails;
+export default CinemaSelect;
