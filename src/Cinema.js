@@ -48,8 +48,8 @@ function CinemaSelect(){
                         <br/>
                         <select class='sl1' value={value} onChange={handleChange}>
                             <option value="PVR">PVR</option>
-                            <option value="Cinepolis">Cinepolis</option>
-                            <option value="IMAX">IMAX</option>
+                            <option value="Cinepolis">3DM</option>
+                            <option value="IMAX">4DZ</option>
                         </select>
                         <br/>
                         <br/>
