@@ -62,4 +62,17 @@ export const detailInfo = [
         genre:'Horror,Thriller',
         age:18
     },
+
+    {
+      id: 6,
+      title: "Mulan",
+      content: "In Imperial China, Hua Mulan is an adventurous and active girl, to the disappointment of her parents Zhou and Li, who hope that one day she will be wed to a good husband.  ",
+      image: "/mulan.jpg",
+      rating:"7.6",
+      summary:"Mulan is a 2020 American fantasy action drama film produced by Walt Disney Pictures. Directed by Niki Caro from a screenplay by Rick Jaffa, Amanda Silver, Lauren Hynek, and Elizabeth Martin, it is a live-action adaptation of Disney's 1998 animated film of the same name, itself based on the Chinese folklore story Ballad of Mulan. The film stars Yifei Liu in the title role, alongside Donnie Yen, Tzi Ma, Jason Scott Lee, Yoson An, Ron Yuan, Gong Li, and Jet Li in supporting roles.",
+      ytLink:"https://www.youtube.com/embed/KK8FHdFluOQ",
+      actors:"Dora Madison Burge ,Chris Osborn ,Edwards ,Williamson,Samuel Davis,Brian Steele",
+      genre:'Action,Thriller',
+      age:12
+  },
 ]

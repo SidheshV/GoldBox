@@ -44,4 +44,12 @@ export const movieData = [
         rating:"5.6",
         age:18
     },
+    {
+      id: 6,
+      title: "Mulan",
+      content: "In Imperial China, Hua Mulan is an adventurous and active girl, to the disappointment of her parents Zhou and Li, who hope that one day she will be wed to a good husband.  ",
+      image: "/mulan.jpg",
+      rating:"7.6",
+      age:12
+  },
 ]
